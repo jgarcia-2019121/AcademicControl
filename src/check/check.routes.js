@@ -1,6 +1,6 @@
 import express from 'express';
-import { validateJwt } from '../src/middlewares/validate-jwt.js';
-import { registerStudent, registerTeacher, login } from '../src/check/check.controller.js';
+import { validateJwt } from '../middlewares/validate-jwt.js';
+import { registerStudent, registerTeacher, login } from '../check/check.controller.js';
 
 const router = express.Router();
 

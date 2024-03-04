@@ -22,7 +22,7 @@ app.use(helmet());
 app.use(morgan('dev'));
 
 // Definir rutas
-app.use('/api/auth', authRoutes);
+app.use('/api/check', authRoutes);
 app.use(teacherRoutes);
 app.use(studentRoutes);
 app.use(validateJwt)

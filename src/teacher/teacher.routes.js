@@ -1,6 +1,6 @@
 import express from 'express';
-import { createCourse, editCourse, deleteCourse, getCoursesForTeacher } from '../src/teacher/teacherController.js';
-import { validateJwt } from '../src/middlewares/validate-jwt.js';
+import { createCourse, editCourse, deleteCourse, getCoursesForTeacher } from '../teacher/teacher.controller.js';
+import { validateJwt } from '../middlewares/validate-jwt.js';
 
 const router = express.Router();
 

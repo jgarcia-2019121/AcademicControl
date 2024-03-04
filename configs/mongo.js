@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
-import Teacher from '../models/teacherModel.js'; // Importamos el modelo de maestro
+import Teacher from '../src/teacher/teacher.model.js'; // Importamos el modelo de maestro
 
 export const connectDB = async () => {
     try {

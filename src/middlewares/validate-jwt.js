@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 export const validateJwt = (req, res, next) => {
     const token = req.headers.authorization;
     const currentRoute = req.path;
-    const publicRoutes = ['/api/check/login'];
+    const publicRoutes = ['api/check/login'];
 
     if (publicRoutes.includes(currentRoute)) {
         return next();
